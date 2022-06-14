@@ -409,6 +409,7 @@ section {
   top: 0;
   border-top: 1px solid rgba(8, 75, 109, 0.08);
   background-color: #fff;
+  z-index: 10;
 }
 .navBar .wrapper {
   display: -webkit-box;
@@ -444,8 +445,8 @@ section {
   color: #fff;
   font-family: "Young Serif";
   padding: 35px 50px;
-  -webkit-transition: 0.75s;
-  transition: 0.75s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .mainMenu a {
@@ -487,4 +488,69 @@ section {
   border-radius: 50%;
   color: #fff;
   text-align: center;
+}
+
+header {
+  background-color: #f8fbf3;
+}
+header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headerImgContainer {
+  width: 48%;
+}
+
+.textContainer {
+  width: 48%;
+}
+
+.categoryList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.categoryList .itemOne {
+  background-color: #ffd698;
+}
+.categoryList .itemTwo {
+  background-color: #f4fcff;
+}
+.categoryList .itemThree {
+  background-color: #f8fbf3;
+}
+.categoryList .itemFour {
+  background-color: #fff5f5;
+}
+.categoryList .items {
+  border-radius: 10%;
+  width: calc(45% - 50px);
+  margin: 50px 25px 25px;
+  padding: 40px;
+  text-align: center;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+.categoryList .items img {
+  border-radius: 10%;
+  margin-bottom: 15px;
+}
+.categoryList .items:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
