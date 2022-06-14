@@ -74,3 +74,24 @@ input {
   margin: 0;
   padding: 0;
 }
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.smallCopy {
+  font-size: 0.6rem;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.2rem;
+}
