@@ -26,6 +26,7 @@
   position: sticky;
   top: 0;
   border-top: 1px solid rgba(8, 75, 109, 0.08);
+  background-color: $solidWhite;
 
   .wrapper {
     display: flex;
@@ -34,9 +35,17 @@
     padding: 20px 0;
   }
 
+  label {
+    cursor: pointer;
+  }
+
   input[type="checkbox"] {
     opacity: 0;
     position: absolute;
+
+    &:checked ~ .slideOutNav {
+      left: 0;
+    }
   }
 }
 
@@ -44,6 +53,39 @@
 
 .slideOutNav {
   background-color: $primary;
+  position: fixed;
+  top: 0;
+  left: -506px;
+  height: 100vh;
+  width: 100%;
+  max-width: 506px;
+  color: $solidWhite;
+  font-family: $headingFont;
+  padding: 35px 50px;
+  transition: 0.75s;
+}
+
+.mainMenu {
+  a {
+    font-family: $headingFont;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    color: rgba($color: $solidWhite, $alpha: 1);
+    transition: 0.3s;
+
+    &:hover,
+    &:focus {
+      color: rgba($color: $solidWhite, $alpha: 0.5);
+    }
+  }
+}
+
+.menuClose {
+  color: $solidWhite;
+  font-size: 1.2rem;
+  font-family: $bodyFont;
+  text-align: right;
+  display: block;
 }
 
 //Search Cart
@@ -54,12 +96,6 @@
   .menuIcon,
   .bag {
     margin-right: 15px;
-  }
-
-  .menuIcon {
-    background-color: transparent;
-    border: none;
-    padding: 0;
   }
 
   .counter p {
