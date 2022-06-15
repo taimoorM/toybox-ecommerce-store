@@ -56,7 +56,7 @@
         <!-- Navbar -->
 
         <!-- Logo -->
-        <a href="#home" class="logo"><h1>Toybox</h1></a>
+        <a href="./index.html" class="logo"><h1>Toybox</h1></a>
 
         <!-- Search + Cart -->
         <div class="searchCart">
@@ -73,12 +73,64 @@
       </div>
     </nav>
 
+    <header class="contactHeader">
+      <div class="wrapper">
+        <h5>Contact</h5>
+        <h3>We're here to help</h3>
+        <p>
+          Any other questions? Reach out at
+          <a href="mailto:support@toybox.io">support@toyboy.io</a>
+        </p>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="contact mainContent" id="mainContent">
+      <div class="wrapper">
+        <form action="">
+          <label for="name" class="sr-only">Name</label>
+          <input type="text" id="name" placeholder="Name" />
+          <label for="surname" class="sr-only">Surname</label>
+          <input type="text" id="surname" placeholder="Surname" />
+          <label for="email" class="sr-only">Email</label>
+          <input type="email" id="email" placeholder="Email" />
+          <label for="phone" class="sr-only">Phone</label>
+          <input type="tel" id="phone" placeholder="Phone" />
+
+          <select name="reason" id="reason">
+            <option value="placeholder" disabled selected>
+              Reason for contacting
+            </option>
+            <option value="refund">Refund request</option>
+            <option value="status">Order status</option>
+            <option value="praise">Praise!</option>
+            <option value="complaint">General concerns</option>
+          </select>
+
+          <label for="message" class="sr-only">Message for me</label>
+          <textarea
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Message for me"
+          ></textarea>
+
+          <fieldset>
+            <input type="checkbox" id="terms" />
+            <label for="terms">I agree to the Terms & Condition</label>
+          </fieldset>
+
+          <button type="submit" Send Message</button>
+        </form>
+      </div>
+    </main>
+
     <!-- Footer -->
     <footer id="footer" class="footer">
       <div class="wrapper">
         <div class="footerFlexContainer">
           <!-- Logo -->
-          <a href="#home" class="footerLogo"><h4>Toybox</h4></a>
+          <a href="./index.html" class="footerLogo"><h4>Toybox</h4></a>
 
           <!-- Footer Nav Container -->
           <div class="footerNav">
