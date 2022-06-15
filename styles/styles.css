@@ -335,6 +335,7 @@ button {
   background-color: transparent;
   border: none;
   padding: 0;
+  cursor: pointer;
 }
 
 .smallCopy {
@@ -723,4 +724,95 @@ footer .social i {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 960px;
+  margin: 90px auto;
+}
+.contact form input,
+.contact form textarea {
+  border: none;
+  font-family: "Jakarta Sans";
+  color: #333;
+  padding: 0 0 10px 5px;
+  margin-bottom: 40px;
+}
+.contact form input::-webkit-input-placeholder, .contact form textarea::-webkit-input-placeholder {
+  color: #084b6d;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.contact form input::-moz-placeholder, .contact form textarea::-moz-placeholder {
+  color: #084b6d;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.contact form input:-ms-input-placeholder, .contact form textarea:-ms-input-placeholder {
+  color: #084b6d;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.contact form input::-ms-input-placeholder, .contact form textarea::-ms-input-placeholder {
+  color: #084b6d;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.contact form input::placeholder,
+.contact form textarea::placeholder {
+  color: #084b6d;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.contact form input:focus,
+.contact form textarea:focus {
+  border-bottom: 1px solid #084b6d;
+  outline: none;
+}
+.contact form input {
+  border-bottom: 1px solid #eee;
+}
+.contact form textarea {
+  border: 1px solid #eee;
+  border-top: none;
+}
+.contact form select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  font-family: "Jakarta Sans";
+  background-color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  font-size: 0.8rem;
+  color: #084b6d;
+  border-bottom: 1px solid #eee;
+  background-image: url("../assets/caret-down-solid.svg");
+  background-repeat: no-repeat;
+  background-position: 95%;
+}
+.contact form select:focus {
+  outline: none;
+}
+.contact form select option {
+  font-family: "Jakarta Sans";
+}
+.contact form fieldset {
+  border: none;
+  padding: 0;
+}
+.contact form fieldset label {
+  font-size: 0.8rem;
+  margin-left: 10px;
+}
+.contact form fieldset input {
+  accent-color: #084b6d;
 }
